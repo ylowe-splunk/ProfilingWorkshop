@@ -1,4 +1,4 @@
-site_name: Splunk Observability Cloud Workshops
+site_name: Yang's Documentation Stash
 site_url: https://signalfx.github.io/observability-workshop/
 site_author: Sales Engineering EMEA
 site_description: >-
@@ -13,7 +13,7 @@ remote_branch: gh-pages
 
 theme:
   name: material
-#  custom_dir: !ENV [THEME_DIR, "overrides"]
+  custom_dir: !ENV [THEME_DIR, "overrides"]
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -68,7 +68,7 @@ markdown_extensions:
       permalink: true
 
 extra_css:
-  - stylesheets/extra.css
+  - extra.css
 
 extra:
   social:
@@ -81,6 +81,11 @@ extra:
   version:
     provider: mike
 
+nav:
+    - Monty Hall Profiling Workshop: 
+        - Setup: MHPW_setup.md
+        - Instrument: MHPW_instrumentation.md
+        - Remediate: MHPW_remediation.md
 plugins:
   - git-revision-date-localized:
       type: date
